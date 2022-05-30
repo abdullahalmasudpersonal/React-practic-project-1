@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../../../node_modules/bootstrap/dist/js/bootstrap.min';
 import './Header.css';
 import logo from '../../../Image/Logo/logo3.png';
 import { Link } from 'react-router-dom';
+import CustomLink from './ActiveLink/CustomLink';
 
 const Header = () => {
     return (
@@ -19,17 +20,22 @@ const Header = () => {
                         <Link to='/'><img src={logo} alt='' /></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav" >
 
-                        <Nav className="me-auto ">
-                            <Nav.Link>
-                                <Link className='text-dark fw-bold' to='/about'>ABOUT</Link>
+                        <Nav className="me-auto " >
+                            <Nav.Link >
+                                <CustomLink className=' customLink fw-bold' to='/academics' >ACADEMICS</CustomLink>
                             </Nav.Link>
-                            <Nav.Link href="#pricing" className='text-dark fw-bold'>Pricing</Nav.Link>
+                            <Nav.Link>
+                                <CustomLink className='customLink fw-bold' to='/administration' >ADMINISTRATION</CustomLink>
+                            </Nav.Link>
+                            <Nav.Link>
+                                <CustomLink className='customLink fw-bold' to='/about' >ABOUT</CustomLink>
+                            </Nav.Link>
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="#deets" className='text-dark fw-bold'>More deets</Nav.Link>
+                            <Nav.Link href="#deets" className=' fw-bold'>More deets</Nav.Link>
                             <Nav.Link eventKey={2} href="#memes" className='text-dark fw-bold'>
                                 Dank memes
                             </Nav.Link>

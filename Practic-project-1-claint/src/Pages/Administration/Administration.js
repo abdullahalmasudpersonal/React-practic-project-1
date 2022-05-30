@@ -1,11 +1,11 @@
 import React from 'react';
 
-const About = () => {
+const Administration = () => {
     return (
         <div className='container'>
-            <h5>About</h5>
+            <h5>Administration</h5>
         </div>
     );
 };
 
-export default About;
+export default Administration;
