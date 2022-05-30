@@ -1,0 +1,23 @@
+.founder{
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.founder-img{
+    height: 350px;
+    width: 300px;
+    background: rgb(253, 229, 248);
+    border-radius: 4px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.founder-img img{
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: rgba(240, 178, 235, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.founder-word{
+    height: 300px;
+    background-color: rgb(235, 206, 168);
+    margin-left: 10px;
+    padding: 10px;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../../../node_modules/bootstrap/dist/js/bootstrap.min';
 import './Header.css';
@@ -15,7 +16,7 @@ const Header = () => {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="##">Home</a>
+                                <Link class="nav-link " to='/' aria-current="page" >Home</Link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="##">Link</a>
