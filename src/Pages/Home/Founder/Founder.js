@@ -5,18 +5,18 @@ import founder from '../../../Image/Founder/M. A. Khalak.jpg';
 const Founder = () => {
     return (
         <div className='container founder'>
-            <div className='d-flex justify-content-center'>
+            <div className='founder-dev'>
+
                 <div className='founder-img'>
-                    
-                    <img width='230px' src={founder} alt='' />
-
-                    <p className='mb-0 fw-bold text-center'>M.A. Khalak</p>
-                    <p className='text-center fw-bold'>Founder</p>
+                     <div>
+                     <img width='230px' src={founder} alt=''/>
+                     <h5 className='mt-1 mb-0 fw-bold text-center'>M. A. Khalak</h5>
+                     <p className='m-0 fw-bold text-center'>founder</p>
+                     </div>
                 </div>
-
-
+                
                 <div className='founder-word'>
-{/*                     <p>ইসলামি ও সাধারণ শিক্ষার সমন্বয়ে গড়ে ওঠা ঐতিহ্যবাহী দ্বীনি শিক্ষা প্রতিষ্ঠান “তা‘মীরুল মিল্লাত কামিল মাদ্রাসা” মহান আল্লাহর অসীম রহমাতে শিক্ষার আলো বিচ্ছুরনে সফলতার স্বাক্ষর রেখে চলছে দীর্ঘদিন ধরে। “তা’মীরুল মিল্লাত ট্রাস্ট” পরিচালিত এ মাদরাসাটি বর্তমানে ইসলাম ও সাধারণ জ্ঞানের শ্রেষ্ঠতম মারকাজ হিসেবে বিশ্বদরবারে পরিচিতি লাভ করেছে। শিক্ষার্থীর প্রতিভা বিকাশে ও মনোদৈহিক উন্নয়নে অহী জ্ঞানের বিকল্প নেই। </p> */}
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                 </div>
             </div>
         </div>

@@ -1,16 +1,16 @@
-.founder {
+.principal {
     display: flex;
     align-items: center;
     padding: 50px;
 }
 
-.founder-dev {
+.principal-dev {
     display: flex;
     grid-gap: 20px;
     align-items: center;
 }
 
-.founder-img {
+.principal-img {
     height: 350px;
     width: 300px;
     background: rgb(255, 211, 246);
@@ -20,21 +20,21 @@
     justify-content: center;
     padding: 30px;
     margin: auto;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    box-shadow: rgba(49, 0, 114, 0.473) 0px 5px 15px;
 }
-.founder-img img {
+.principal-img img {
     border-radius: 5px;
 }
-.founder-word {
+.principal-word {
     height: 350px;
     padding: 40px;
     background: rgb(244, 209, 255);
     border-radius: 5px;
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    box-shadow: rgba(37, 0, 124, 0.459) 0px 5px 15px;
 }
 
  @media screen and (max-width:800px) {
-    .founder-dev {
+    .principal-dev {
         display: grid;
         grid-gap: 50px;
         grid-template-columns: repeat(1, 1fr);
