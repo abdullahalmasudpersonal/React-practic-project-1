@@ -1,10 +1,10 @@
 .footer{
     height: 350px;
-    background-color: rgb(217, 203, 245);
+    background-color: rgb(64, 55, 82);
     bottom: 0;
     left: 0;
     width: 100%;
-    border-top: 2px solid rgb(253, 228, 4);
+    border-top: 2px solid rgb(253, 187, 4);
   }
   .footer-dev{
       display: flex;
