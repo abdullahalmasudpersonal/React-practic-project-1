@@ -7,6 +7,9 @@ import Home from './Pages/Home/Home/Home';
 import About from './Pages/About/About';
 import Academics from './Pages/Academics/Academics';
 import Administration from './Pages/Administration/Administration';
+import Admission from './Pages/Admission/Admission';
+import Register from './Pages/Login/Register/Register';
+import Login from './Pages/Login/Login/Login';
 
 
 function App() {
@@ -17,7 +20,10 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/academics' element={<Academics />} />
         <Route path='/administration' element={<Administration />} />
+        <Route path='/admission' element={<Admission />} />
         <Route path='/about' element={<About />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       <Footer />
     </div>

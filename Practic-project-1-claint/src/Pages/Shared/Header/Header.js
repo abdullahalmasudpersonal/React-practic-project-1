@@ -10,7 +10,7 @@ import CustomLink from './ActiveLink/CustomLink';
 const Header = () => {
     return (
         <>
-            <div className='head-title' sticky='top'>
+            <div className='head-title'>
                 <h4 className='fw-bold head'>Mafsar Ul Ulum Sinior Madrasah</h4>
             </div>
             <Navbar sticky='top' collapseOnSelect expand="lg" variant="light" className='bgcolor' >
@@ -30,15 +30,25 @@ const Header = () => {
                                 <CustomLink className='customLink fw-bold' to='/administration' >ADMINISTRATION</CustomLink>
                             </Nav.Link>
                             <Nav.Link>
+                                <CustomLink className='customLink fw-bold' to='/admission'>ADMISSION</CustomLink>
+                            </Nav.Link>
+                            <Nav.Link>
+                                <CustomLink className='customLink fw-bold' to='/about' >GALLERY</CustomLink>
+                            </Nav.Link>
+                            <Nav.Link>
                                 <CustomLink className='customLink fw-bold' to='/about' >ABOUT</CustomLink>
                             </Nav.Link>
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="#deets" className=' fw-bold'>More deets</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes" className='text-dark fw-bold'>
-                                Dank memes
+                            <Nav.Link> <CustomLink className='customLink fw-bold' to='/register' >REGISTER</CustomLink>
                             </Nav.Link>
+                            <Nav.Link> <CustomLink className='customLink fw-bold' to='/login' >LOGIN</CustomLink>
+                            </Nav.Link>
+
+{/*                             <Nav.Link eventKey={2} href="#memes" className='text-dark fw-bold'>
+                                Dank memes
+                            </Nav.Link> */}
                         </Nav>
 
                     </Navbar.Collapse>

@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 2px solid rgb(255, 153, 0);
 }
 
 .head {
@@ -19,7 +20,8 @@
 }
 
  .bgcolor {
-    background: rgb(255, 231, 231);
+    background: rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(255,166,0);
 
  }
 .customLink{
