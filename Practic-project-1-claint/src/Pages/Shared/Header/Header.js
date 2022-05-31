@@ -33,10 +33,16 @@ const Header = () => {
                                 <CustomLink className='customLink fw-bold' to='/admission'>ADMISSION</CustomLink>
                             </Nav.Link>
                             <Nav.Link>
-                                <CustomLink className='customLink fw-bold' to='/about' >GALLERY</CustomLink>
+                                <CustomLink className='customLink fw-bold' to='/students'>STUDENTS</CustomLink>
+                            </Nav.Link>
+                            <Nav.Link>
+                                <CustomLink className='customLink fw-bold' to='/gallery' >GALLERY</CustomLink>
                             </Nav.Link>
                             <Nav.Link>
                                 <CustomLink className='customLink fw-bold' to='/about' >ABOUT</CustomLink>
+                            </Nav.Link>
+                            <Nav.Link>
+                                <CustomLink className='customLink fw-bold' to='/connectUs' >CONNECT US</CustomLink>
                             </Nav.Link>
                         </Nav>
 
