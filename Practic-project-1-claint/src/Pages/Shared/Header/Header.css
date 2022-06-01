@@ -27,3 +27,8 @@
 .customLink{
     text-decoration: none;
 }
+.signout-btn{
+    border: none;
+    background: inherit;
+    color: rgb(46, 0, 107);
+}

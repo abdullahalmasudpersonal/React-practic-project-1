@@ -1,0 +1,57 @@
+.login-bg{
+    height: 1000px;
+    background: rgb(255, 247, 236);
+}
+.login-dev{
+    height: 550px;
+    width: 300px;
+    margin: auto;
+    background: rgb(80, 38, 231);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 145, 0, 0.425);
+    box-shadow: rgba(18, 14, 37, 0.555) 0px 2px 4px 0px, rgba(18, 11, 77, 0.692) 0px 2px 16px 0px;
+    
+}
+.login-logo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-dev h3{
+    color: #ffefd8;
+}
+.form-dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-dev input:not([type=checkbox]){
+    margin:8px 0;
+    height: 40px;
+    width: 240px;
+    border-radius: 5px;
+}
+.forget-btn span:hover{
+    cursor: pointer;
+    color: red;
+}
+.submit{
+    color: rgb(80, 15, 139);
+    background-color: rgb(255, 154, 2);
+    border: none;
+}
+.submit:hover{
+    background-color: rgb(248, 121, 2);
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.or hr{
+    width: 35%;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin: auto 5px;
+}

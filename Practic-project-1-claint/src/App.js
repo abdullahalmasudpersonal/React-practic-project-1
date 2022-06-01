@@ -13,6 +13,7 @@ import Login from './Pages/Login/Login/Login';
 import Gallery from './Pages/Gallery/Gallery';
 import Students from './Pages/Students/Students';
 import ConnectUs from './Pages/ConnectUs/ConnectUs';
+import Links from './Pages/Links/Links';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/about' element={<About />} />
         <Route path='/connectUs' element={<ConnectUs />} />
+        <Route path='/links' element={<Links />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
       </Routes>

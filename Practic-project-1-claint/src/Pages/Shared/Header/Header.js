@@ -3,11 +3,21 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../../../node_modules/bootstrap/dist/js/bootstrap.min';
 import './Header.css';
+import { signOut } from 'firebase/auth';
 import logo from '../../../Image/Logo/logo3.png';
 import { Link } from 'react-router-dom';
-import CustomLink from './ActiveLink/CustomLink';
+import CustomLink from './ActiveLink/CustomLink'
+import auth from '../../../firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
+
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () => {
+        signOut(auth);
+    }
+
     return (
         <>
             <div className='head-title'>
@@ -44,15 +54,23 @@ const Header = () => {
                             <Nav.Link>
                                 <CustomLink className='customLink fw-bold' to='/connectUs' >CONNECT US</CustomLink>
                             </Nav.Link>
+                            <Nav.Link>
+                                <CustomLink className='customLink fw-bold' to='/links' >LINKS</CustomLink>
+                            </Nav.Link>
                         </Nav>
 
                         <Nav>
                             <Nav.Link> <CustomLink className='customLink fw-bold' to='/register' >REGISTER</CustomLink>
                             </Nav.Link>
-                            <Nav.Link> <CustomLink className='customLink fw-bold' to='/login' >LOGIN</CustomLink>
+                            <Nav.Link>
+                                {user ?
+                                    <button className=' signout-btn fw-bold' onClick={handleSignOut} >SIGN OUT</button>
+                                    :
+                                    <CustomLink className='customLink fw-bold' to='/login' >LOGIN</CustomLink>
+                                }
                             </Nav.Link>
 
-{/*                             <Nav.Link eventKey={2} href="#memes" className='text-dark fw-bold'>
+                            {/*                             <Nav.Link eventKey={2} href="#memes" className='text-dark fw-bold'>
                                 Dank memes
                             </Nav.Link> */}
                         </Nav>
