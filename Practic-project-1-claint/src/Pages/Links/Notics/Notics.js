@@ -1,11 +1,12 @@
 import React from 'react';
+import './Notics.css';
 
-const Academics = () => {
+const Notics = () => {
     return (
         <div className='container'>
-            <h5>Academics</h5>
+            <h5>Notics</h5>
         </div>
     );
 };
 
-export default Academics;
+export default Notics;

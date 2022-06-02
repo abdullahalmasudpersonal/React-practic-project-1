@@ -1,4 +1,6 @@
 .headingnews{
     height: 30px;
-    background: rgb(226, 211, 255);
+    color: rgb(160, 91, 0);
+    background: rgb(252, 251, 255);
+    border-bottom: 2px solid rgb(255, 153, 0);
 }

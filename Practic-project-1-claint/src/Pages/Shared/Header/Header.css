@@ -22,13 +22,29 @@
  .bgcolor {
     background: rgb(255, 255, 255);
     border-bottom: 2px solid rgba(255,166,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
  }
 .customLink{
     text-decoration: none;
+    color: #ffc38b;
 }
 .signout-btn{
     border: none;
     background: inherit;
     color: rgb(46, 0, 107);
+}
+
+
+.dropdown {
+    border: none;
+    color: rgb(46, 0, 107);
+}
+.dropdown:hover{
+    color: #e27c1d;
+}
+.drop-link{
+    text-decoration: none;
 }

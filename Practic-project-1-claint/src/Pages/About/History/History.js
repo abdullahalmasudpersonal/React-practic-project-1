@@ -1,11 +1,12 @@
 import React from 'react';
+import './History.css';
 
-const Gallery = () => {
+const History = () => {
     return (
         <div className='container'>
-            <h5>Gallery</h5>
+            <h5>History</h5>
         </div>
     );
 };
 
-export default Gallery;
+export default History;

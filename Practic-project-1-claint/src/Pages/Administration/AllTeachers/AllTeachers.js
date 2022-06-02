@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Links = () => {
+const AllTeachers = () => {
     return (
         <div className='container'>
-            <h5>Links</h5>
+            <h5>All Teachers</h5>
         </div>
     );
 };
 
-export default Links;
+export default AllTeachers;

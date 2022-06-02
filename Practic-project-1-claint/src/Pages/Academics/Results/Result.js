@@ -1,11 +1,12 @@
 import React from 'react';
+import './Results.css';
 
-const Students = () => {
+const Result = () => {
     return (
         <div className='container'>
-            <h5>Students</h5>
+            <h5>Result</h5>
         </div>
     );
 };
 
-export default Students;
+export default Result;
