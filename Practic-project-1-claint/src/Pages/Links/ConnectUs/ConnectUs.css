@@ -1,0 +1,48 @@
+.connectus{
+    height: 1000px;
+}
+.connect-heading{
+    margin-top: 50px;
+    padding-left: 20px;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: bisque;
+    font-weight: 600;
+    background-color: rgb(38, 35, 189);
+}
+.connect-principal{
+    height: 200px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+}
+.connect-other{
+    height: 200px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+@media screen and (max-width:600px){
+    .connect-other{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width:601px) and (max-width:1000px){
+    .connect-other{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ @media screen and (min-width:1001px){
+    .connect-other{
+        grid-gap: 20px;
+    }
+} 

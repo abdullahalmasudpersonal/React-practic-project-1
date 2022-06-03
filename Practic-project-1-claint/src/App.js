@@ -27,6 +27,7 @@ import Syllabus from './Pages/Academics/Syllabus/Syllabus';
 import ExaminationRoutine from './Pages/Academics/ExaminationRoutine/ExaminationRoutine';
 import Notics from './Pages/Links/Notics/Notics';
 import Library from './Pages/Links/Library/Library';
+import Footers from './Pages/Shared/Footer/Footers';
 
 function App() {
   return (
@@ -58,7 +59,8 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
       </Routes>
-      <Footer />
+{/*       <Footer />
+ */}      <Footers/>
     </div>
   );
 }
