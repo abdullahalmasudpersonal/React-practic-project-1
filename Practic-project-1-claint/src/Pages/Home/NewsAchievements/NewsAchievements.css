@@ -1,0 +1,35 @@
+.newsachievements{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    grid-gap: 20px;
+}
+.newshead{
+    background: rgb(200, 214, 255);
+}
+.newsevents{
+    display: flex;
+    grid-gap: 20px;
+    justify-content: center;
+}
+.newseventsdev{
+    height: 540px;
+    width: 350px;
+    background: rgb(200, 214, 255);
+}
+.achievementshead{
+    background: rgb(200, 214, 255);
+}
+.achievements{
+    width: 350px;
+}
+.achievementsdev{
+    height: 540px;
+    background: rebeccapurple;
+}
+@media screen and (max-width:1000px){
+    .newsachievements{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

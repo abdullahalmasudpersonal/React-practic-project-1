@@ -7,7 +7,8 @@ const HmEventNotices = () => {
             <div className='container eventNotice'>
                 <div className='events'>
                     <div>
-                        <h3 className='text-center'>Recent and Upcoming Events </h3>
+                        <h2 className='text-center pt-0 p-5 fw-bold'>Recent and Upcoming Events <div className='event-hr' /></h2>
+                        
                         <div className='event-dev'>
                             <div className='event-dev1'>
 
@@ -16,10 +17,19 @@ const HmEventNotices = () => {
 
                             </div>
                         </div>
+                        <div className='event-btn'>
+                            <button >View All Events</button>
+                        </div>
                     </div>
                 </div>
                 <div className='notices'>
+                    <h2 className='text-center pt-0 p-5 fw-bold'>Notices <div className='event-hr' /></h2>
+                    <div className='notices-dev'>
 
+                    </div>
+                    <div className='notices-btn'>
+                        <button>View All Notices</button>
+                    </div>
                 </div>
             </div>
         </div>

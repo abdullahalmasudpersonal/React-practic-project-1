@@ -1,40 +1,83 @@
 .hmeventbg{
-    padding: 100px;
-    background-color: rgb(233, 211, 255);
+    padding: 80px;
+    background-color: rgb(236, 237, 255);
 }
 .eventNotice{
     display: flex;
+    grid-gap: 30px;
     justify-content: center;
 }
 .events{
-    width: 700px;
     margin: auto;
-    border: 3px solid rgb(255, 195, 30);
-    background-color: rebeccapurple;
+/*     border: 3px solid rgb(255, 195, 30);
+    background-color: rgb(159, 129, 189); */
+}
+.event-hr{
+    width: 45px;
+    border: 1px solid rgb(255, 166, 0);
+    border-radius: 20px;
+    color: rgb(255, 166, 0);
+    margin: 7px auto 0 auto ;
 }
 .event-dev{
     display: flex;
+    grid-gap: 30px;
 }
 .event-dev1{
     height: 600px;
-    width: 340px;
-    margin: auto;
-    background-color: antiquewhite;
-    border: 2px solid rgb(5, 179, 92);
-}
-.notices{
-    height: 700px;
     width: 350px;
     margin: auto;
-    border: 3px solid rgb(255, 100, 10);
-    background-color: rebeccapurple;
+    border-radius: 4px;
+    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
-@media screen and (max-width:700px){
+.notices{
+    margin: auto;
+    /* border: 3px solid rgb(255, 100, 10);
+    background-color: rgb(181, 107, 255); */
+}
+.notices-dev{
+    height: 600px;
+    width: 350px;
+    border-radius: 4px;
+    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.event-btn{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0 0;
+}
+.event-btn button{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(224, 122, 4);
+    border: none;
+}
+.notices-btn{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0 0;
+}
+.notices-btn button{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(224, 122, 4);
+    border: none;
+}
+@media screen and (max-width:780px){
+    .event-dev{
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width:750px){
     .event-dev{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
     }
 }
 
@@ -42,5 +85,8 @@
     .eventNotice{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .event-btn{
+        padding-bottom: 30px;
     }
 }

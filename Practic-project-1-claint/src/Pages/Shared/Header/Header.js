@@ -185,15 +185,15 @@ const Header = () => {
                         </Nav>
 
                         <Nav>
-                            <Nav.Link> <CustomLink className='customLink fw-bold' to='/register' >REGISTER</CustomLink>
-                            </Nav.Link>
-                            <Nav.Link>
+                            {/* <Nav.Link> <CustomLink className='customLink fw-bold' to='/register' >REGISTER</CustomLink>
+                            </Nav.Link> */}
+                           {/*  <Nav.Link>
                                 {user ?
                                     <button className=' signout-btn fw-bold' onClick={handleSignOut} >SIGN OUT</button>
                                     :
                                     <CustomLink className='customLink fw-bold' to='/login' >LOGIN</CustomLink>
                                 }
-                            </Nav.Link>
+                            </Nav.Link> */}
 
                             {/*                             <Nav.Link eventKey={2} href="#memes" className='text-dark fw-bold'>
                                 Dank memes

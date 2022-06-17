@@ -1,3 +1,137 @@
-
-.ourcampus-dev{
+.ourcampus {
+    height: 360px;
+    /*  background-color: rebeccapurple; */
+    background: url('https://i.ibb.co/rc3Q3gZ/mafsir-1.jpg')center center fixed;
+    background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /*     background-blend-mode:  color-dodge; */
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
 }
+
+.ourcampus2 {
+    height: 360px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+    opacity: 1;
+}
+
+.ourcampus h3 {
+    color: rgb(255, 229, 174);
+}
+
+.ourcampus h5 {
+    color: rgb(255, 166, 0);
+}
+
+.ourcampus-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .campus-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.campus-play i{
+    font-size: 35px;
+    padding-left: 5px;
+}
+.campus-play {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.603);
+} */
+
+
+
+.play-btn {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgba(38, 0, 255, 0.8) 60%, rgb(161, 159, 253) 72%);
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 25px 3px rgba(4, 0, 255, 0.589);
+}
+
+/* triangle */
+.play-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    transform-origin: center center;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid rgb(142, 154, 255);
+    z-index: 100;
+    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+/* pulse wave */
+  .play-btn:before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate1 2s;
+    animation: pulsate1 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, .75);
+    top: -25%;
+    left: -25%;
+    background: rgba(198, 16, 0, 0);
+  } 
+
+   @-webkit-keyframes pulsate1 {
+    0% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 1;
+      box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+      box-shadow: none;
+  
+    }
+  } 
+
+   @keyframes pulsate1 {
+    0% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 1;
+      box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1);
+      opacity: 0;
+      box-shadow: none;
+  
+    }
+  } 
