@@ -5,7 +5,11 @@
     grid-gap: 20px;
 }
 .newshead{
-    background: rgb(200, 214, 255);
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(184, 184, 184);
+    display: flex;
+    justify-content: space-between;
 }
 .newsevents{
     display: flex;
@@ -13,23 +17,54 @@
     justify-content: center;
 }
 .newseventsdev{
+    border-radius: 2px;
+    margin-top: 10px;
     height: 540px;
     width: 350px;
-    background: rgb(200, 214, 255);
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .achievementshead{
-    background: rgb(200, 214, 255);
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
 }
 .achievements{
     width: 350px;
 }
 .achievementsdev{
+    margin-top: 10px;
     height: 540px;
-    background: rebeccapurple;
+    background: rgb(254, 254, 255);
+    border-radius: 2px 2px 4px 4px ;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.achiv-btn{
+    bottom: 0;
+    width: 100%;
+    border: 2px solid rgb(228, 175, 0);
+    background: wheat;
+    font-size: 18px;
+    border-radius: 0 0 4px 4px;
+    position:absolute;
+
+}
+@media screen and (max-width:750px){
+    .newsevents{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .newseventsdev{
+        margin:10px auto auto auto;
+    }
 }
 @media screen and (max-width:1000px){
     .newsachievements{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .achievements{
+        margin:30px auto auto auto;
     }
 }

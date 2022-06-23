@@ -28,6 +28,7 @@ import ExaminationRoutine from './Pages/Academics/ExaminationRoutine/Examination
 import Notics from './Pages/Links/Notics/Notics';
 import Library from './Pages/Links/Library/Library';
 import Footers from './Pages/Shared/Footer/Footers';
+import NoticeDetails from './Pages/Links/Notics/NoticeDetails/NoticeDetails';
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/notice-details' element={<NoticeDetails />} />
       </Routes>
 {/*       <Footer />
  */}      <Footers/>
